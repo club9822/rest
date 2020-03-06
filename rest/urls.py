@@ -18,12 +18,13 @@ from django.contrib import admin
 from django.urls import path
 from rest_framework import routers
 from rest_api.views import UserViewSet
-
+from product.views import ProductViewSet, ProductCategoryViewSet
 
 # Routers provide an easy way of automatically determining the URL conf.
 router = routers.DefaultRouter()
 router.register(r'users', UserViewSet)
-
+router.register(r'products', ProductViewSet)
+router.register(r'product-category', ProductCategoryViewSet)
 
 urlpatterns = [
     path('admin/', admin.site.urls),
