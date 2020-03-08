@@ -17,7 +17,9 @@ from django.conf.urls import url, include
 from django.contrib import admin
 from django.urls import path
 from rest_framework import routers
-from user.views import UserViewSet
+from rest_framework.urlpatterns import format_suffix_patterns
+
+from user.views import UserViewSet, UserProfile
 from product.views import ProductViewSet, ProductCategoryViewSet
 from exam.views import ExamViewSet, QuestionViewSet, ChoiceViewSet
 
@@ -31,7 +33,11 @@ router.register(r'questions', QuestionViewSet)
 router.register(r'choices', ChoiceViewSet)
 
 urlpatterns = [
+    # path('accounts/profile/', UserProfile.as_view()),
+    path('user/profile/<int:pk>/', UserProfile.as_view()),
     path('admin/', admin.site.urls),
     url(r'^api/v1/', include(router.urls)),
     url(r'^api-auth/', include('rest_framework.urls', namespace='rest_framework'))
+
 ]
+# urlpatterns = format_suffix_patterns(urlpatterns)
