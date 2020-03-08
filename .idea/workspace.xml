@@ -3,12 +3,12 @@
   <component name="ChangeListManager">
     <list default="true" id="d251467e-7363-40f8-9ccf-e54a400a7b9d" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/product/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/product/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/product/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/product/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/exam/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/exam/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/exam/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/exam/views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/rest/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/rest/settings.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/rest/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/rest/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rest_api/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/rest_api/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rest_api/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/rest_api/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user/apps.py" beforeDir="false" afterPath="$PROJECT_DIR$/user/apps.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/user/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,13 +19,16 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1Yj4mFgiO6iGdpH1HfciUHGSTwv" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
   </component>
@@ -65,7 +68,9 @@
       <option name="presentableId" value="Default" />
       <updated>1583442826863</updated>
       <workItem from="1583442829913" duration="2134000" />
-      <workItem from="1583496336701" duration="6680000" />
+      <workItem from="1583496336701" duration="7061000" />
+      <workItem from="1583511861086" duration="1696000" />
+      <workItem from="1583665557755" duration="438000" />
     </task>
     <servers />
   </component>
@@ -74,6 +79,9 @@
   </component>
   <component name="UnknownFeatures">
     <option featureType="com.intellij.fileTypeFactory" implementationName="*.env" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
   <component name="WindowStateProjectService">
     <state x="710" y="358" width="559" height="397" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1583443644250">

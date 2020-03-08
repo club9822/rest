@@ -17,14 +17,18 @@ from django.conf.urls import url, include
 from django.contrib import admin
 from django.urls import path
 from rest_framework import routers
-from rest_api.views import UserViewSet
+from user.views import UserViewSet
 from product.views import ProductViewSet, ProductCategoryViewSet
+from exam.views import ExamViewSet, QuestionViewSet, ChoiceViewSet
 
 # Routers provide an easy way of automatically determining the URL conf.
 router = routers.DefaultRouter()
 router.register(r'users', UserViewSet)
 router.register(r'products', ProductViewSet)
 router.register(r'product-category', ProductCategoryViewSet)
+router.register(r'exams', ExamViewSet)
+router.register(r'questions', QuestionViewSet)
+router.register(r'choices', ChoiceViewSet)
 
 urlpatterns = [
     path('admin/', admin.site.urls),

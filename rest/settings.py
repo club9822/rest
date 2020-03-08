@@ -35,11 +35,12 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'rest_api.apps.RestApiConfig',
     'rest_framework',
     'chat.apps.ChatConfig',
     'product.apps.ProductConfig',
-    'wallet.apps.WalletConfig'
+    'wallet.apps.WalletConfig',
+    'user.apps.UserConfig',
+    'exam.apps.ExamConfig'
 ]
 
 MIDDLEWARE = [

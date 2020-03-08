@@ -1,7 +1,7 @@
 from django.shortcuts import render
 from django.contrib.auth.models import User
 from rest_framework import routers, serializers, viewsets
-from rest_api.models import UserSerializer
+from user.models import UserSerializer
 
 
 # ViewSets define the view behavior.
