@@ -1,5 +1,5 @@
 from rest_framework import serializers
-from exam.models import Exam, Question, Choice
+from exam.models import Exam, Question, Choice,Answer
 
 
 class ExamSerializer(serializers.ModelSerializer):
@@ -19,4 +19,10 @@ class QuestionSerializer(serializers.ModelSerializer):
 class ChoiceSerializer(serializers.ModelSerializer):
     class Meta:
         model = Choice
+        fields = '__all__'
+
+
+class AnswerSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Answer
         fields = '__all__'
