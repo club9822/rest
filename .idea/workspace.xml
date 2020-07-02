@@ -2,17 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ec026dcd-f149-4592-b27e-c343c97728ce" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/exam/migrations/0001_initial.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/exam/migrations/0002_exams_creator.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/exam/migrations/0003_answer_choice_question.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/exam/migrations/__init__.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/exam/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/exam/admin.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/exam/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/exam/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/exam/serializers.py" beforeDir="false" afterPath="$PROJECT_DIR$/exam/serializers.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/exam/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/exam/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rest/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/rest/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rest/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/rest/urls.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -89,7 +81,7 @@
       <workItem from="1590098892976" duration="642000" />
       <workItem from="1590156713518" duration="6565000" />
       <workItem from="1593293909952" duration="2996000" />
-      <workItem from="1593725429313" duration="4973000" />
+      <workItem from="1593725429313" duration="6191000" />
     </task>
     <servers />
   </component>

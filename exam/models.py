@@ -18,21 +18,26 @@ class Exams(models.Model):
 class Question(models.Model):
     text = models.CharField(max_length=150)
     score = models.IntegerField(default=1)
-    exam_id = models.ManyToManyField(to=Exams)
+    exam = models.ManyToManyField(to=Exams)
+
     def __str__(self):
-     return self.text
+        return self.text
 
 
 class Choice(models.Model):
     question = models.ForeignKey(Question, on_delete=models.CASCADE, default=1)
     choice_text = models.CharField(max_length=200)
+
     # votes = models.IntegerField(default=0)
     def __str__(self):
         return self.choice_text
 
 
 class Answer(models.Model):
-    user_id = models.ForeignKey(to=User, on_delete=models.CASCADE)
-    exam_id = models.ForeignKey(to=Exams, on_delete=models.CASCADE)
-    question_id = models.ForeignKey(to=Question, on_delete=models.CASCADE)
-    choice_id = models.ForeignKey(to=Choice, on_delete=models.CASCADE)
+    user = models.ForeignKey(to=User, on_delete=models.CASCADE)
+    exam = models.ForeignKey(to=Exams, on_delete=models.CASCADE)
+    question = models.ForeignKey(to=Question, on_delete=models.CASCADE)
+    choice = models.ForeignKey(to=Choice, on_delete=models.CASCADE)
+
+    def __str__(self):
+        return self.choice_id.choice_text
