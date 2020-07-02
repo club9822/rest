@@ -88,10 +88,15 @@ WSGI_APPLICATION = 'rest.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'izrwnolc',
-        'USER': 'izrwnolc',
-        'PASSWORD': 'WHfKfZmrwpEfO-b6PQdINzz0SR0zLXA-',
-        'HOST': 'rajje.db.elephantsql.com',
+        # 'NAME': 'izrwnolc',
+        # 'USER': 'izrwnolc',
+        # 'PASSWORD': 'WHfKfZmrwpEfO-b6PQdINzz0SR0zLXA-',
+        # 'HOST': 'rajje.db.elephantsql.com',
+        # 'PORT': '5432',
+        'NAME': 'sample_project',
+        'USER': 'rest_api_application',
+        'PASSWORD': 's#vc2w1!2as@c*',
+        'HOST': 'localhost',
         'PORT': '5432',
     }
 }

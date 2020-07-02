@@ -21,14 +21,15 @@ from rest_framework.urlpatterns import format_suffix_patterns
 
 from user.views import UserViewSet, UserProfile
 from product.views import ProductViewSet, ProductCategoryViewSet
-from exam.views import ExamViewSet, QuestionViewSet, ChoiceViewSet ,AnswerViewSet
+# from exam.views import ExamsViewSet
+from exam.views import ExamsViewSet, QuestionViewSet, ChoiceViewSet ,AnswerViewSet
 
 # Routers provide an easy way of automatically determining the URL conf.
 router = routers.DefaultRouter()
 router.register(r'users', UserViewSet)
 router.register(r'products', ProductViewSet)
 router.register(r'product-category', ProductCategoryViewSet)
-router.register(r'exams', ExamViewSet)
+router.register(r'exams', ExamsViewSet)
 router.register(r'questions', QuestionViewSet)
 router.register(r'choices', ChoiceViewSet)
 router.register(r'answers', AnswerViewSet)

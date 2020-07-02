@@ -1,11 +1,13 @@
 from rest_framework import viewsets, status
-from exam.models import Exam, Question, Choice, Answer
-from exam.serializers import ExamSerializer, QuestionSerializer, ChoiceSerializer, AnswerSerializer
+# from exam.models import Exams
+from exam.models import Exams, Question, Choice, Answer
+# from exam.serializers import ExamsSerializer
+from exam.serializers import ExamsSerializer, QuestionSerializer, ChoiceSerializer, AnswerSerializer
 
 
-class ExamViewSet(viewsets.ModelViewSet):
-    queryset = Exam.objects.all()
-    serializer_class = ExamSerializer
+class ExamsViewSet(viewsets.ModelViewSet):
+    queryset = Exams.objects.all()
+    serializer_class = ExamsSerializer
 
 
 class QuestionViewSet(viewsets.ModelViewSet):
