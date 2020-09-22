@@ -94,8 +94,8 @@ DATABASES = {
         # 'HOST': 'rajje.db.elephantsql.com',
         # 'PORT': '5432',
         'NAME': 'sample_project',
-        'USER': 'rest_api_application',
-        'PASSWORD': 's#vc2w1!2as@c*',
+        'USER': 'postgres',
+        'PASSWORD': 'toor',
         'HOST': 'localhost',
         'PORT': '5432',
     }

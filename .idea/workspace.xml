@@ -2,9 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ec026dcd-f149-4592-b27e-c343c97728ce" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sample_app/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sample_app/admin.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sample_app/apps.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sample_app/migrations/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sample_app/models.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sample_app/serializers.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sample_app/tests.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sample_app/views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/exam/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/exam/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/exam/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/exam/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rest/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/rest/settings.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -25,6 +34,7 @@
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../django_docker_postgresql" />
     <property name="restartRequiresConfirmation" value="false" />
   </component>
   <component name="RunDashboard">
@@ -81,7 +91,12 @@
       <workItem from="1590098892976" duration="642000" />
       <workItem from="1590156713518" duration="6565000" />
       <workItem from="1593293909952" duration="2996000" />
-      <workItem from="1593725429313" duration="6191000" />
+      <workItem from="1593725429313" duration="6367000" />
+      <workItem from="1593735072601" duration="17000" />
+      <workItem from="1595783460041" duration="1261000" />
+      <workItem from="1600449089659" duration="2445000" />
+      <workItem from="1600716065686" duration="706000" />
+      <workItem from="1600795043934" duration="1641000" />
     </task>
     <servers />
   </component>
