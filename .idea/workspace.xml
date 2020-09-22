@@ -2,8 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ec026dcd-f149-4592-b27e-c343c97728ce" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.flake8" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.travis.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
     </list>
@@ -88,7 +86,7 @@
       <workItem from="1595783460041" duration="1261000" />
       <workItem from="1600449089659" duration="2445000" />
       <workItem from="1600716065686" duration="706000" />
-      <workItem from="1600795043934" duration="2528000" />
+      <workItem from="1600795043934" duration="2759000" />
     </task>
     <servers />
   </component>
