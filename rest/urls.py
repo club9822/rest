@@ -24,6 +24,7 @@ from product.views import ProductViewSet, ProductCategoryViewSet
 # from exam.views import ExamsViewSet
 from exam.views import ExamsViewSet, QuestionViewSet, ChoiceViewSet, AnswerViewSet
 from order.views import CartViewSet, OrderViewSet, DiscountViewSet
+from exam.urls import urlpatterns as urlpatterns1
 
 # Routers provide an easy way of automatically determining the URL conf.
 router = routers.DefaultRouter()
@@ -37,13 +38,12 @@ router.register(r'exams', ExamsViewSet)
 router.register(r'questions', QuestionViewSet)
 router.register(r'choices', ChoiceViewSet)
 router.register(r'answers', AnswerViewSet)
-
 urlpatterns = [
     # path('accounts/profile/', UserProfile.as_view()),
     # path('user/profile/<int:pk>/', UserProfile.as_view()),
     path('admin/', admin.site.urls),
     url(r'^api/v1/', include(router.urls)),
-    url(r'^api-auth/', include('rest_framework.urls', namespace='rest_framework'))
+    url(r'^api-auth/', include('rest_framework.urls')),
 
 ]
 # urlpatterns = format_suffix_patterns(urlpatterns)

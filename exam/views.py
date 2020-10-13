@@ -5,7 +5,6 @@ from exam.models import Exams, Question, Choice, Answer
 from exam.serializers import ExamsSerializer, QuestionSerializer, ChoiceSerializer, AnswerSerializer
 from rest_framework.authentication import TokenAuthentication
 from rest_framework.permissions import IsAuthenticated
-
 """
  viewsets GenericViewSet,ModelViewSet
  mixins ListModelMixin CreateModelMixin
@@ -39,3 +38,9 @@ class ChoiceViewSet(viewsets.ModelViewSet):
 class AnswerViewSet(viewsets.ModelViewSet):
     queryset = Answer.objects.all()
     serializer_class = AnswerSerializer
+
+class TestViewSet(viewsets.ModelViewSet):
+    queryset = Answer.objects.all().order_by('-id')
+    serializer_class = AnswerSerializer
+    authentication_classes = [TokenAuthentication]
+    permission_classes = [IsAuthenticated]
