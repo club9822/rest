@@ -7,6 +7,12 @@ class ProductViewSet(viewsets.ModelViewSet):
     queryset = Product.objects.all()
     serializer_class = ProductSerializer
 
+    # def get_queryset(self):
+    #     """
+    #     overright get method
+    #     :return:
+    #     """
+    #   return self.queryset.filter(user=self.request.user)
 
 class ProductCategoryViewSet(viewsets.ModelViewSet):
     queryset = ProductCategory.objects.all()

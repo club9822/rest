@@ -7,6 +7,8 @@ class ExamsSerializer(serializers.ModelSerializer):
     class Meta:
         model = Exams
         fields = '__all__'
+        # fields = ('id',)
+        # read_only_fields = ('id')
 
 
 class QuestionSerializer(serializers.ModelSerializer):

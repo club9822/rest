@@ -1,13 +1,14 @@
 from django.db import models
-from user.models import User
+from user.models import CustomUser
+from django.contrib.auth.models import AbstractBaseUser, BaseUserManager, PermissionsMixin
 
 
 # Create your models here.
 class SampleModel(models.model):
-    title = models.CharField(max_length=250)
+    title = models.CharField(max_length=255)
     description = models.TextField()
     image = models.FilePathField()
-    creator = models.ForeignKey(to=User, related_name='sampleapp', on_delete=models.CASCADE, default=1)
+    creator = models.ForeignKey(to=CustomUser, related_name='sampleapp', on_delete=models.CASCADE, default=1)
     created = models.DateTimeField(auto_now_add=True)
     updated = models.DateTimeField(auto_now_add=True)
 

@@ -2,8 +2,45 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ec026dcd-f149-4592-b27e-c343c97728ce" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/order/admin.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/order/apps.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/order/migrations/0001_initial.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/order/models/Order.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/order/models/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/order/serializers.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/order/tests.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/order/views.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sample_app/tests/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sample_app/tests/test_models.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user/forms.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user/migrations/0001_initial.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user/migrations/0002_auto_20200924_1630.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chat/migrations/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/order/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/exam/migrations/0001_initial.py" beforeDir="false" afterPath="$PROJECT_DIR$/exam/migrations/0001_initial.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/exam/migrations/0002_exams_creator.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/exam/migrations/0003_answer_choice_question.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/exam/migrations/0004_auto_20200703_0404.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/exam/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/exam/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/exam/serializers.py" beforeDir="false" afterPath="$PROJECT_DIR$/exam/serializers.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/exam/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/exam/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/file_handler/migrations/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/order/migrations/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/product/migrations/0001_initial.py" beforeDir="false" afterPath="$PROJECT_DIR$/product/migrations/0001_initial.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/product/migrations/0002_auto_20200308_1113.py" beforeDir="false" afterPath="$PROJECT_DIR$/product/migrations/0002_auto_20200924_1640.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/product/migrations/0003_auto_20200308_1405.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/product/migrations/0004_auto_20200308_1409.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/product/migrations/0005_auto_20200308_1412.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/product/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/product/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/product/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/product/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rest/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/rest/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rest/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/rest/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sample_app/migrations/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/order/models/Cart.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sample_app/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/sample_app/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/user/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/user/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/user/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wallet/migrations/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/order/models/Discount.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -24,8 +61,13 @@
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../django_docker_postgresql" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/order/models" />
     <property name="restartRequiresConfirmation" value="false" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\drive\rest\order\models" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -86,7 +128,10 @@
       <workItem from="1595783460041" duration="1261000" />
       <workItem from="1600449089659" duration="2445000" />
       <workItem from="1600716065686" duration="706000" />
-      <workItem from="1600795043934" duration="2878000" />
+      <workItem from="1600795043934" duration="8621000" />
+      <workItem from="1600948710264" duration="7341000" />
+      <workItem from="1601027739464" duration="4011000" />
+      <workItem from="1602614639610" duration="237000" />
     </task>
     <servers />
   </component>
