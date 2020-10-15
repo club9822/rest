@@ -1,6 +1,6 @@
 from django.db import models
 from rest_framework import serializers
-from user.models import CustomUser
+from customuser.models import CustomUser
 
 
 #
@@ -10,7 +10,7 @@ from user.models import CustomUser
 
 class ProductCategory(models.Model):
     title = models.CharField(max_length=150, blank=True, default='')
-    description = models.CharField(max_length=100, blank=True, default='')
+    description = models.CharField(max_length=100, default='')
     parent = models.IntegerField(blank=True, null=True)
     status = models.CharField(max_length=25)
     creator = models.ForeignKey(to=CustomUser, related_name='productcategory', on_delete=models.CASCADE, default=1)
@@ -30,7 +30,7 @@ class ProductCategory(models.Model):
 #
 class Product(models.Model):
     title = models.CharField(max_length=150, default=None)
-    description = models.TextField(default=None)
+    description = models.TextField(default='',blank=True)
     category = models.ForeignKey(to=ProductCategory, on_delete=models.CASCADE)
     price = models.FloatField(default=0.0, verbose_name='قیمت')
     status = models.CharField(max_length=25, default='active')

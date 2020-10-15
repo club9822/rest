@@ -2,7 +2,7 @@ from rest_framework import serializers
 from order.models.Cart import Cart
 from order.models.Order import Order
 from order.models.Discount import Discount
-from user.models import CustomUser
+from customuser.models import CustomUser
 
 
 class CartSerializer(serializers.ModelSerializer):

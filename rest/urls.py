@@ -18,20 +18,23 @@ from django.contrib import admin
 from django.urls import path
 from rest_framework import routers
 from rest_framework.urlpatterns import format_suffix_patterns
-
-# from user.views import UserViewSet, UserProfile
+from rest_framework_simplejwt.views import (
+    TokenObtainPairView,
+    TokenRefreshView,
+)
+from customuser.views import UserViewSet,UserProfileView
 from product.views import ProductViewSet, ProductCategoryViewSet
 # from exam.views import ExamsViewSet
 from exam.views import ExamsViewSet, QuestionViewSet, ChoiceViewSet, AnswerViewSet
 from order.views import CartViewSet, OrderViewSet, DiscountViewSet
-from exam.urls import urlpatterns as urlpatterns1
 
 # Routers provide an easy way of automatically determining the URL conf.
 router = routers.DefaultRouter()
 router.register(r'carts', CartViewSet)
 router.register(r'orders', OrderViewSet)
 router.register(r'discounts', DiscountViewSet)
-# router.register(r'users', UserViewSet)
+router.register(r'users', UserViewSet)
+# router.register('users/<int:pk>/', UserProfile)
 router.register(r'products', ProductViewSet)
 router.register(r'product-category', ProductCategoryViewSet)
 router.register(r'exams', ExamsViewSet)
@@ -39,10 +42,12 @@ router.register(r'questions', QuestionViewSet)
 router.register(r'choices', ChoiceViewSet)
 router.register(r'answers', AnswerViewSet)
 urlpatterns = [
-    # path('accounts/profile/', UserProfile.as_view()),
-    # path('user/profile/<int:pk>/', UserProfile.as_view()),
+    path('api/v1/users/profile/<int:pk>/', UserProfileView.as_view()),
+    # path('customuser/profile/<int:pk>/', UserProfileView.as_view()),
     path('admin/', admin.site.urls),
     url(r'^api/v1/', include(router.urls)),
+    path('api/token/', TokenObtainPairView.as_view(), name='token_obtain_pair'),
+    path('api/token/refresh/', TokenRefreshView.as_view(), name='token_refresh'),
     url(r'^api-auth/', include('rest_framework.urls')),
 
 ]

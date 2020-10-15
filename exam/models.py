@@ -1,6 +1,6 @@
 from django.db import models
-# from user.models import User
-from user.models import CustomUser
+# from customuser.models import User
+from customuser.models import CustomUser
 
 
 class Exams(models.Model):
@@ -27,6 +27,7 @@ class Question(models.Model):
 class Choice(models.Model):
     question = models.ForeignKey(Question, on_delete=models.CASCADE, default=1)
     choice_text = models.CharField(max_length=255)
+    choice_label = models.CharField(choices=(('A', 'A'), ('B', 'B'), ('C', 'C'), ('D', 'D')), max_length=1, default='')
 
     # votes = models.IntegerField(default=0)
     def __str__(self):

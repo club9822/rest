@@ -12,7 +12,7 @@ class ProductViewSet(viewsets.ModelViewSet):
     #     overright get method
     #     :return:
     #     """
-    #   return self.queryset.filter(user=self.request.user)
+    #   return self.queryset.filter(customuser=self.request.customuser)
 
 class ProductCategoryViewSet(viewsets.ModelViewSet):
     queryset = ProductCategory.objects.all()

@@ -14,13 +14,13 @@ from django.contrib.auth.models import User, PermissionsMixin
 class CustomUserManager(BaseUserManager):
     def create_user(self, mobile, password=None, status="active", **extra_fields):
         """
-        create custom user manager
+        create custom customuser manager
         mobile is required
         :param status:
         :param mobile:
         :param password:
         :param extra_fields:
-        :return: user
+        :return: customuser
         """
         if not mobile:
             raise ValueError(_('The mobile must be set'))
@@ -36,16 +36,17 @@ class CustomUserManager(BaseUserManager):
         extra_fields.setdefault('is_staff', True)
         extra_fields.setdefault('is_superuser', True)
         extra_fields.setdefault('is_active', True)
-        extra_fields.setdefault('national_id','')
+        extra_fields.setdefault('national_id', '')
         if extra_fields.get('is_staff') is not True:
             raise ValueError(_('Superuser must have is_staff=True.'))
         if extra_fields.get('is_superuser') is not True:
             raise ValueError(_('Superuser must have is_superuser=True.'))
-        return self.create_user(mobile, password, **extra_fields)
+        return self.create_user(mobile=mobile, password=password, **extra_fields)
 
 
 class CustomUser(AbstractBaseUser, PermissionsMixin):
-    mobile = models.CharField(max_length=15, unique=True, primary_key=True)
+    id = models.AutoField(primary_key=True)
+    mobile = models.CharField(max_length=15, unique=True)
     national_id = models.CharField(max_length=15, default='')
     status = models.CharField(max_length=15, default="active")
     is_active = models.BooleanField(default=True)
@@ -58,6 +59,7 @@ class CustomUser(AbstractBaseUser, PermissionsMixin):
     def __str__(self):
         return self.mobile
 
+
 # Serializers define the API representation.
 # class UserSerializer(serializers.HyperlinkedModelSerializer):
 #     class Meta:
@@ -68,7 +70,7 @@ class CustomUser(AbstractBaseUser, PermissionsMixin):
 #         'role', 'first_name', 'last_name', 'status', 'national_code',
 #                   'address', 'mobile', 'telephone', 'age', 'gender']
 
-# class UserSerializer(serializers.HyperlinkedModelSerializer):
-#     class Meta:
-#         model = AbstractUser
-#         fields = '__all__'
+class UserSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = CustomUser
+        fields = '__all__'
